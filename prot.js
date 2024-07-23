@@ -71,5 +71,3 @@ document.getElementById('read-more-btn').addEventListener('click', function() {
   });
 
   /*-----------contact google sheet-----------*/
-
-  
