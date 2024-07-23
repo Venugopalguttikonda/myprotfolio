@@ -18,6 +18,7 @@
     --main-color: #ffd480;
 }
 
+
 html {
     font-size: 62.5%; /* 1rem = 10px */
 }
@@ -378,12 +379,20 @@ h2 {
     }
   }
   
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
 /*-------------menu icon and effects----------------*/
+
+
 
 /* Media Queries */
 @media (max-width: 1200px) {
     html {
-        font-size: 62.5%;
+        font-size: 70%;
     }
 }
 
@@ -494,3 +503,35 @@ h2 {
 }
 
 
+/* Ensure header container is properly aligned */
+.header {
+    padding: 1rem 3%; /* Adjust as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Ensure the menu icon is positioned relative to the header */
+}
+
+/* Menu icon adjustments */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none; /* Hidden by default */
+    margin: 0; /* Remove default margin */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 2%; /* Adjust padding for mobile */
+    }
+    
+    #menu-icon {
+        display: block; /* Show menu icon on mobile */
+        position: absolute; /* Position relative to header */
+        top: 50%;
+        right: 2%; /* Adjust this value as needed */
+        transform: translateY(-50%); /* Center vertically */
+    }
+
+}
