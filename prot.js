@@ -48,7 +48,7 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top'  });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', {origin: 
 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', {origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content,  .Skills p, .skills-lists, .heading0', {origin: 'right' }); 
+ScrollReveal().reveal('.home-content p, .about-content,  .Skills p, .skills-lists, .heading0', {origin: 'left' }); 
 /*types js */
 const types = new Typed('.multiple-text', {
     strings: ['Software Developer', 'MernStack Developer'],
