@@ -33,7 +33,7 @@ section {
 }
 
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,6 +45,21 @@ section {
     z-index: 100;
 }
 
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 1rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+/*=========================*/
+
+
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -55,6 +70,7 @@ section {
     font-weight: 600;
     cursor: default;
 }
+
 
 .navbar a {
     font-size: 1.7rem;
@@ -74,8 +90,7 @@ section {
 }
 
 .home-img-resize {
-    width: 100rem;
-    height: 45rem;
+    width: 1000rem;
     border-radius: 5%;
 }
 
@@ -624,11 +639,7 @@ span {
   
   /* Ensure header container is properly aligned */
 .header {
-    padding: 1rem 3%; /* Adjust as needed */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; /* Ensure the menu icon is positioned relative to the header */
+    position: relative; 
 }
 
 /* Menu icon adjustments */
