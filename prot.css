@@ -643,7 +643,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  position: relative;
+    position: relative;
 }
 
 /* Menu icon adjustments */
@@ -658,13 +658,14 @@ span {
 @media (max-width: 768px) {
     .header {
         padding: 1rem 2%; /* Adjust padding for mobile */
+        position: fixed;
     }
     
     #menu-icon {
         display: block; /* Show menu icon on mobile */
         position: absolute; /* Position relative to header */
         top: 50%;
-        right: 2%; /* Adjust this value as needed */
+        right: 13%; /* Adjust this value as needed */
         transform: translateY(-50%); /* Center vertically */
     }
 }
